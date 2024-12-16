@@ -1,0 +1,26 @@
+{
+  "name": "root",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "build": "pnpm run build",
+    "format": "biome format --write packages",
+    "lint": "biome lint packages"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "volta": {
+    "node": "22.12.0",
+    "pnpm": "9.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Omikorin/usos.git"
+  },
+  "author": "Michał Korczak (https://omikor.in)",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}
