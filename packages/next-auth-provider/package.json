@@ -1,0 +1,40 @@
+{
+  "name": "@usos/next-auth-provider",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "NextAuth.js one and only USOS provider",
+  "keywords": [
+    "authentication",
+    "next-auth",
+    "next",
+    "oauth",
+    "provider",
+    "usos"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts"
+  },
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omikorin/usos.git",
+    "directory": "packages/next-auth-provider"
+  },
+  "author": "Michał Korczak (https://omikor.in)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Omikorin/usos/issues"
+  },
+  "homepage": "https://github.com/Omikorin/usos#readme",
+  "peerDependencies": {
+    "next-auth": "4.24.10"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  }
+}
